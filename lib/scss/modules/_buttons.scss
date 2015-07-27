@@ -1,0 +1,25 @@
+.site-container {
+  %btn {
+    display: inline-block;
+  }
+  button,
+  .btn,
+  .button,
+  input[type=submit],
+  input[type=reset],
+  .vc_read_more,
+  .vc_btn {
+    @extend %btn;
+    background:$secondary;
+    &:hover {
+    }
+    &:active {
+    }
+    &.small{
+      &:hover {
+      }
+      &:active {
+      }
+    }
+  }
+}
