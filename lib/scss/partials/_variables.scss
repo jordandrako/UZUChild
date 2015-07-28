@@ -47,16 +47,15 @@ $heading-color: $darkblue;
 
 // Invert
 $heading-invert: $white;
-$text-invert: $blue;
+$text-invert: $white;
 $link-invert: $white;
-$hover-invert: $red;
+$hover-invert: $white;
 
 // Breakpoints
 $break-med: 768px;
 $break-lg: 1024px;
 
 // Elements
-$button-color: $red;
-$button-hover: $darkblue;
-
-
+$button-color: $secondary;
+$button-hover: $primary;
+$button-text: $white;
