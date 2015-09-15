@@ -1,6 +1,10 @@
 {
   "name": "UZUChild",
   "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@bit"
+  },
   "main": "index.php",
   "author": "Jordan Janzen",
   "license": "ISC",
