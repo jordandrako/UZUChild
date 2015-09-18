@@ -20,6 +20,7 @@
 ## Editing theme styles
 
 All theme stylesheets are made in Sass and are stored in lib/scss/.  The main-style.scss acts as the table of contents that pulls in the scss partials. The main file to edit most css is located in the lib/scss/breakpoints/_base.scss file. This is a mobile first theme so style for the phone and add tablet and desktop specific styles into the appropriate breakpoint files.
+
 1. Change the child theme name and parent theme in the main-style.scss comment.
 2. Edit the partials/_variable.scss file. This contains the color and typeface and other variables for the site branding. For example: if the brands main color is red, edit the $red variable to match the right hex code. Then set the $primary variable to $red.
 3. Follow the main-style.scss and edit the other partials according to what you need.
