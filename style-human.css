@@ -2,6 +2,10 @@
 Theme Name: UZU Child Theme (change me)
 Theme URI: http://www.uzu-media.com
 Template: Parent Theme
+
+# STOP!!! ###############################################################
+# Don't edit the style.css file. Refer to the Readme.md for instructions.
+# #######################################################################
 */
 /*********************
 IMPORTING PARTIALS
@@ -249,7 +253,8 @@ body {
 }
 
 a {
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
   text-decoration: none;
   color: chartreuse;
 }
@@ -473,7 +478,8 @@ img {
   top: 0;
   display: inline-block;
   padding: 10px 13px;
-  transition: all .05s ease-in-out;
+  -webkit-transition: all .05s ease-in-out;
+          transition: all .05s ease-in-out;
   border: none;
   border-radius: 4px;
   box-shadow: none;
