@@ -361,6 +361,30 @@ h6,
   font-size: 1em;
 }
 
+.invert h1,
+.invert .h1,
+.invert h2,
+.invert .h2,
+.invert h3,
+.invert .h3,
+.invert h4,
+.invert .h4,
+.invert h5,
+.invert .h5,
+.invert h6,
+.invert .h6 {
+  color: #fafafa;
+}
+.invert p {
+  color: #fafafa;
+}
+.invert a {
+  color: #fafafa;
+}
+.invert a:hover {
+  color: #fafafa;
+}
+
 .five-sixths,
 .four-sixths,
 .one-fourth,
@@ -373,39 +397,39 @@ h6,
 .two-sixths,
 .two-thirds {
   float: left;
-  margin-left: 2.564102564102564%;
+  margin-left: 30px;
 }
 
 .one-half,
 .three-sixths,
 .two-fourths {
-  width: 48.717948717948715%;
+  width: calc(50% - 30px);
 }
 
 .one-third,
 .two-sixths {
-  width: 31.623931623931625%;
+  width: calc(33.3% - 30px);
 }
 
 .four-sixths,
 .two-thirds {
-  width: 65.81196581196582%;
+  width: calc(66.6% - 30px);
 }
 
 .one-fourth {
-  width: 23.076923076923077%;
+  width: calc(25% - 30px);
 }
 
 .three-fourths {
-  width: 74.35897435897436%;
+  width: calc(75% - 30px);
 }
 
 .one-sixth {
-  width: 14.52991452991453%;
+  width: calc(15% - 30px);
 }
 
 .five-sixths {
-  width: 82.90598290598291%;
+  width: calc(85% - 30px);
 }
 
 .first {
@@ -438,23 +462,51 @@ img {
   width: auto;
 }
 
-.site-container button,
-.site-container .btn,
-.site-container .button,
-.site-container input[type=submit],
-.site-container input[type=reset],
-.site-container .vc_read_more,
-.site-container .vc_btn {
+.wrapper button,
+.wrapper .btn,
+.wrapper .button,
+.wrapper input[type=submit],
+.wrapper input[type=reset],
+.wrapper .vc_read_more,
+.wrapper .vc_btn {
+  position: relative;
+  top: 0;
   display: inline-block;
+  padding: 10px 13px;
+  transition: all .05s ease-in-out;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
 }
-.site-container button,
-.site-container .btn,
-.site-container .button,
-.site-container input[type=submit],
-.site-container input[type=reset],
-.site-container .vc_read_more,
-.site-container .vc_btn {
+.wrapper button,
+.wrapper .btn,
+.wrapper .button,
+.wrapper input[type=submit],
+.wrapper input[type=reset],
+.wrapper .vc_read_more,
+.wrapper .vc_btn {
+  color: #fafafa;
   background: royalblue;
+  box-shadow: 0 4px 0 #1d44b8;
+}
+.wrapper button:hover,
+.wrapper .btn:hover,
+.wrapper .button:hover,
+.wrapper input[type=submit]:hover,
+.wrapper input[type=reset]:hover,
+.wrapper .vc_read_more:hover,
+.wrapper .vc_btn:hover {
+  background: chartreuse;
+}
+.wrapper button:active,
+.wrapper .btn:active,
+.wrapper .button:active,
+.wrapper input[type=submit]:active,
+.wrapper input[type=reset]:active,
+.wrapper .vc_read_more:active,
+.wrapper .vc_btn:active {
+  top: 4px;
+  box-shadow: none;
 }
 
 /*********************
