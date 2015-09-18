@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 
     autoprefixer: { //Vendor prefixes on compiled CSS
       options: {
-        browsers: ['last 2 versions', '>1%']
+        browsers: ['last 2 versions', '> 1%']
       },
       multiple_file: {
         options: {
