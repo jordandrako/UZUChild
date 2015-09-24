@@ -15,39 +15,39 @@
 .two-thirds {
   float: left;
 
-  margin-left: 2.564102564102564%;
+  margin-left: 30px;
 }
 
 .one-half,
 .three-sixths,
 .two-fourths {
-  width: 48.717948717948715%;
+  width: calc(50% - 30px);
 }
 
 .one-third,
 .two-sixths {
-  width: 31.623931623931625%;
+  width: calc(33.3% - 30px);
 }
 
 .four-sixths,
 .two-thirds {
-  width: 65.81196581196582%;
+  width: calc(66.6% - 30px);
 }
 
 .one-fourth {
-  width: 23.076923076923077%;
+  width: calc(25% - 30px);
 }
 
 .three-fourths {
-  width: 74.35897435897436%;
+  width: calc(75% - 30px);
 }
 
 .one-sixth {
-  width: 14.52991452991453%;
+  width: calc(15% - 30px);
 }
 
 .five-sixths {
-  width: 82.90598290598291%;
+  width: calc(85% - 30px);
 }
 
 .first {

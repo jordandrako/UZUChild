@@ -1,5 +1,5 @@
 # UZU Child Theme Template
-### Version 1.0.2
+### Version 1.0.3
 
 ## Installation Instructions
 
@@ -16,3 +16,11 @@
 2. Set up chrome inspector to map to your project folder to enable editing the code from the browser.
 3. Update screenshot.png
 4. Install yeoman (via "npm install -g yo"), and yeopress (via "npm install -g generator-wordpress"), and generate a wordpress install that has a custom wp-config which you can then make a custom local-config.php file. A sample of these files are included in the lib/sample folder. This way you can still upload the same wp-config.php file to the remote server without it breaking the connection to the database.
+
+## Editing theme styles
+
+All theme stylesheets are made in Sass and are stored in lib/scss/.  The main-style.scss acts as the table of contents that pulls in the scss partials. The main file to edit most css is located in the lib/scss/breakpoints/_base.scss file. This is a mobile first theme so style for the phone and add tablet and desktop specific styles into the appropriate breakpoint files.
+
+1. Change the child theme name and parent theme in the main-style.scss comment.
+2. Edit the partials/_variable.scss file. This contains the color and typeface and other variables for the site branding. For example: if the brands main color is red, edit the $red variable to match the right hex code. Then set the $primary variable to $red.
+3. Follow the main-style.scss and edit the other partials according to what you need.
