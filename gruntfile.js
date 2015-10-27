@@ -55,6 +55,43 @@ module.exports = function(grunt) {
       }
     },
 
+    imagemin: {
+      png: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [
+        {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: 'images/',
+          src: ['*.png'],
+          // Could also match cwd line above. i.e. images/
+          dest: 'images/compressed/',
+          ext: '.png'
+        },
+        ],
+      },
+      jpg: {
+        options: {
+          progressive: true
+        },
+        files: [
+        {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: 'images/',
+          src: ['*.jpg'],
+          // Could also match cwd. i.e. images/
+          dest: 'images/compressed/',
+          ext: '.jpg'
+        },
+        ],
+      },
+    },
+
     watch: { //Fire and forget
       scripts: {
         files: ['lib/js/dev/*.js'],
@@ -77,7 +114,8 @@ module.exports = function(grunt) {
         }
       },
       images: {
-        files: ['**/*.jpg', '**/*.png','**/*.gif'],
+        files: ['images/*.jpg', 'images/*.png'],
+        tasks: ['imagemin'],
         options: {
           livereload: true,
         }
@@ -91,10 +129,12 @@ grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-autoprefixer');
+grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
 
 grunt.registerTask('default', ['watch']);
 grunt.registerTask('buildjs', ['concat', 'uglify']);
 grunt.registerTask('buildcss', ['sass', 'autoprefixer']);
+grunt.registerTask('buildimg', ['imagemin']);
 };
