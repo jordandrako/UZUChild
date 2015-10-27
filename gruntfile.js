@@ -114,8 +114,7 @@ module.exports = function(grunt) {
         }
       },
       images: {
-        files: ['images/*.jpg', 'images/*.png'],
-        tasks: ['imagemin'],
+        files: ['images/**/*.jpg', 'images/**/*.png'],
         options: {
           livereload: true,
         }
@@ -137,4 +136,5 @@ grunt.registerTask('default', ['watch']);
 grunt.registerTask('buildjs', ['concat', 'uglify']);
 grunt.registerTask('buildcss', ['sass', 'autoprefixer']);
 grunt.registerTask('buildimg', ['imagemin']);
+grunt.registerTask('build', ['buildjs', 'buildcss', 'buildimg'])
 };
