@@ -44,3 +44,23 @@
     }
   }
 }
+a.made-by-uzu {
+  font-family: 'helvetica neue', helvetica, verdana, sans-serif;
+  font-size: 11px;
+
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  margin: 10px 0 0;
+  padding: 7px 0 0;
+
+  text-align: center;
+
+  color: #3bf !important;
+  border-radius: 100%;
+  background: #3bf;
+  &:hover {
+    color: #fff !important;
+  }
+}

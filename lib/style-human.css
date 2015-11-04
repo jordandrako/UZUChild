@@ -511,6 +511,23 @@ img {
   box-shadow: none;
 }
 
+a.made-by-uzu {
+  font-family: 'helvetica neue', helvetica, verdana, sans-serif;
+  font-size: 11px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 0 0;
+  padding: 7px 0 0;
+  text-align: center;
+  color: #3bf !important;
+  border-radius: 100%;
+  background: #3bf;
+}
+a.made-by-uzu:hover {
+  color: #fff !important;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
