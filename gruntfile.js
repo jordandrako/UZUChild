@@ -58,7 +58,7 @@ module.exports = function(grunt) {
     imagemin: {
       png: {
         options: {
-          optimizationLevel: 7
+          optimizationLevel: 4
         },
         files: [
         {
@@ -70,8 +70,8 @@ module.exports = function(grunt) {
           // Could also match cwd line above. i.e. images/
           dest: 'images/compressed/',
           ext: '.png'
-        },
-        ],
+        }
+        ]
       },
       jpg: {
         options: {
@@ -87,9 +87,9 @@ module.exports = function(grunt) {
           // Could also match cwd. i.e. images/
           dest: 'images/compressed/',
           ext: '.jpg'
-        },
-        ],
-      },
+        }
+        ]
+      }
     },
 
     watch: { //Fire and forget
@@ -115,6 +115,7 @@ module.exports = function(grunt) {
       },
       images: {
         files: ['images/**/*.jpg', 'images/**/*.png'],
+        tasks: ['imagemin'],
         options: {
           livereload: true,
         }
